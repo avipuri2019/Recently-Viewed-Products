@@ -1,0 +1,49 @@
+/* Homepage Styles */
+.homepage {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .products-list,
+  .recently-viewed-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+  }
+  .recently-viewed-list-heading{
+    margin-top: 80px;
+  }
+  .product-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 15px;
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .product-card h2 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+  }
+  
+  .product-card p {
+    color: #555;
+  }
+  
+  .product-card a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+  }
+  
