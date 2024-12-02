@@ -1,0 +1,17 @@
+version: "3.9"
+services:
+  app:
+    build: .
+    ports:
+      - "3001:3001"
+    volumes:
+      - .:/usr/src
+      - /usr/src/node_modules
+    environment:
+      - REDIS_URL=redis://redis:6379
+  redis:
+    image: redis:latest
+    container_name: redis-1
+    restart: always 
+    ports:
+      - "6379:6379"
